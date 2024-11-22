@@ -1,8 +1,5 @@
-
 const chat = document.getElementById("chat")
 const main = document.getElementById("main")
-
-
 
 const showMessage = (message, sender) => {
   if (sender === "user") {
@@ -29,7 +26,6 @@ const showMessage = (message, sender) => {
 
 // 5. Confirm order with yes/no
 // Confirm order shrimp
-
 const confirmOrder = (username) => {
   form.innerHTML += `
   <div class="confirm-container" id="confirm-container">
@@ -37,7 +33,6 @@ const confirmOrder = (username) => {
          <button class="confirm-button" id="no-button" type="button">No</button>
        </div>
   `
-
   document
     .getElementById("yes-button")
     .addEventListener("click", () => {
@@ -54,11 +49,8 @@ const confirmOrder = (username) => {
     })
 }
 
-
 // 4. Select dish and display message 
-
 // Select fish dish
-
 const chooseFish = (username) => {
   form.innerHTML += `
   <div class="dish-container" id="dish-container">
@@ -73,9 +65,7 @@ const chooseFish = (username) => {
       showMessage(`The Salmon for you. That will be $15. Are you sure you want to order this?`, "bot")
       form.innerHTML = ""
       confirmOrder(username)
-    }
-    )
-
+    })
   document
     .getElementById("fish-chips-button")
     .addEventListener("click", () => {

@@ -12,7 +12,6 @@ body {
 }
 
 /* header for mobile phones */
-
 header {
   display: flex;
   background: url(./assets/hero-bubbles.jpg);
@@ -34,7 +33,6 @@ h1 {
 }
 
 /* main  */
-
 main {
   background: rgb(5, 49, 68);
   width: 100%;
@@ -57,7 +55,6 @@ main {
 }
 
 /* everything belonging to the chat*/
-
 .chat {
   flex: 1;
   display: flex;
@@ -118,7 +115,6 @@ main {
 }
 
 /*The first button ("Yes!") to continue the conversation */
-
 .confirm-button {
   background-color: rgb(4, 38, 52);
   color: white;
